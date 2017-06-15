@@ -35,45 +35,9 @@
 			<li>Who will have to remain aware of progress on that component in order to build <em>their</em> components.</li>
 		</ul>
 		
-		<p>To represent your decision, make a table with all of your components in the rows and columns. Which components depend on each other? Read the row first, then the column, as in "Component 1 depends on Component 2"</p>
-		
-		<table class="table table-striped">
-			<tr>
-				<th></th>
-				<th>Component 1<br><small>Joe</small></th>
-				<th>Component 2<br><small>Jane</small></th>
-				<th>Component 3<br><small>Jack</small></th>
-				<th>&hellip;</th>
-			</tr>
-			<tr>
-				<th>Component 1<br><small>Joe</small></th>
-				<td>&ndash;</td>
-				<td>&check;</td>
-				<td>&check;</td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>Component 2<br><small>Jane</small></th>
-				<td></td>
-				<td>&ndash;</td>
-				<td>&check;</td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>Component 3<br><small>Jack</small></th>
-				<td></td>
-				<td></td>
-				<td>&ndash;</td>
-				<td></td>
-			</tr>
-			<tr>
-				<th>&hellip;</th>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table>
+		<p>To represent your decisions, write these decisions for each component like the example below:</p>
+
+		<p><em>Jane's going to build the <strong>WidgetFactory</Strong>. It depends pretty heavily on the existence of <strong>WidgetA</strong> and <strong>WidgetB</strong>, which Joe is building, so Jane will have to nag Joe about his progress, or devise some way to stub both widgets. Joe's committed to having the widget interfaces done by April 4th, so Jane isn't blocked.</em></p>
 		
 		<p>This should tell you who has to coordinate with who. Now, estimate how long it's going to take to build each of those components. What do these estimates mean for the order you should build your components in? Generate a schedule for when you're going to build each component by, like this:</p>
 		
