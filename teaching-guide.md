@@ -21,15 +21,17 @@
 
 ## Problems caused by the course design
 
-* Incorporate time and expectation for students to learn APIs and frameworks. This was hidden learning in the class, and surfacing it as explicit and expected and part of class would help reduce the pressure on teammates who were the only ones with the necessary knowledge.
+* Need to incorporate time and expectation for students to learn APIs and frameworks. This was hidden learning in the class, and surfacing it as explicit and expected and part of class would help reduce the pressure on teammates who were the only ones with the necessary knowledge.
 * Some teams didn't utilize the architecture documents they created earlier in course. In some cases, this was reasonable, since they were first drafts and really first attempts at thinking about architecture. In other cases, it was problematic, since teammates relied on those documents to understand the code, but the architecture in the documents was abandoned.
-* As with any team, many teams had trouble getting particular teammates to contribute.
 * Many teams found GitHub's wiki unfamiliar to too difficult to edit, so teams relied on Google Docs instead. This created extra work, because we needed the wiki and it's history to grade, forcing the students to duplicate effort.
 * Some students used CSE 154 as their web development pre-requisite, which didn't prepare them with any version control or web development framework knowledge.
 * Setting up development environments on each students' computer was painful, slow, and unsupported by the class.
 * Students craved more non-academic reading options.
+* The paper midterm took too long to grade. Devise a way to run an online version in class while still preventing cheating.
 
 ## Problems intrinsic to software engineering
 * Students struggled to define ownership over issue triage.
 * Students struggled to define good testing practices.
 * Students were frustrated by how much verification slowed development
+* As with any team, many teams had trouble getting particular teammates to contribute.
+
