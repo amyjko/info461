@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="../style.css" />
+
+		<!-- UPDATE -->
+		<title>Complexity</title>
+		
+	</head>
+	<body>
+		<p><a href="../index.html">Back to Homepage</a></p>
+
+		<!-- UPDATE -->
+		<img src="images/complexity.jpg" class="img-responsive" />		
+		<small>Credit: public domain</small>
+		
+		<!-- UPDATE -->
+		<h1>Complexity</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>One of the most important attributes of a great engineer is their ability to reason about software complexity with agility. This means comprehending the smallest detail in a software implementation, all the way up to its impact on the highest level architectural detail, linking everything between, and explaining all of this complexity to other people. This skill is central because it not only demonstrates a mastery over how complex software systems are built, but also helps others acquire that mastery through communication.</p>
+	
+		<p>Your task today is to practice acquiring knowledge of software complexity and communicating that complexity to others. To do this, you're going to choose an line of code in a file in an open source project and write explanations of the following:</p>
+		
+		<ul>
+			<li>The role of the line <em>locally</em> inside the function that it's in.</li>
+			<li>The role of the function in the component it is in.</li>
+			<li>The role of the class in the architecture of the program</li>
+			<li>The role of the architecture in solving the problem the program solves.</li>
+		</ul>
+		
+		<p>To do these, you need to be savvy with program comprehension tools. Get good at searching code to find calls to functions, instantiations of classes, uses of variable names. GitHub's search features aren't as powerful as a proper IDE's search features, but they're good enough for today's practice.</p>
+
+		<p>Ready? Pick one of the following:</p>
+		
+		<!-- UPDATE These will likely change. More stable links? -->
+		<ul>
+			<li><a href="https://github.com/adobe/brackets/blob/master/src/widgets/StatusBar.js#L116">Mystery line 1</a>.</li>
+			<li><a href="https://github.com/adobe/brackets/blob/master/src/filesystem/FileIndex.js#L57">Mystery line 2</a>.</li>
+			<li><a href="https://github.com/adobe/brackets/blob/master/src/search/FindInFiles.js#L341">Mystery line 3</a>.</li>
+			<li><a href="https://github.com/adobe/brackets/blob/master/src/document/Document.js#L354">Mystery line 4</a>.</li>
+		</ul>
+		
+
+		<p>When you think you know the answer, find someone else who is done but analyzed a different line. Try to explain the four details above to them until they understand.</p>
+
+		<p>When you're done, choose another until the end of class.</p>
+		
+	</body>
+
+</html>
+
+
+

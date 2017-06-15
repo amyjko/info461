@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="../style.css" />
+
+		<title>Tradeoff-aware</title>
+		
+	</head>
+	<body>
+		<p><a href="../index.html">Back to Homepage</a></p>
+
+		<!-- UPDATE -->
+		<img src="images/scales.png" class="img-responsive" />		
+		<small>Credit: unknown</small>
+		
+		<h1>Tradeoff-aware</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>Studies of software engineering expertise (<a href="#li">Li et al. 2015</a>) make it pretty clear that a fundamental skill in being a great software engineer is identifying, analyzing, and ultimately deciding between <em>tradeoffs</em>. As we've discussed, no software can achieve all of the qualities it might need to simultaneously: a high-performance implementation is usually less maintainable, since it may use obscure optimizations that are harder to understand and change; highly secure implementation is likely to be less testable, because it will be harder to set up environments that simulate both intended and unintended access to a system. Good engineers know that these tradeoffs exist, can reason about them, and can choose between them, in line with a project's goals.</p>
+	
+		<p>Today, we'll practice some of these tradeoff analysis skills by evaluating two different APIs that try to accomplish the same goal. Your job, <strong>individually</strong> will be to analyze the tradeoffs in the APIs and then choose one, forming an argument for why. (This is a frequent and realistic task in practice; what's artificial about today is that you'll be doing it in only 50 minutes. Most of these evaluations would span at least a day or two of playing with an API to more deeply understand it's tradeoffs and their relationship to an actual project.</p>
+		
+		<p>Here's the scenario I want you to imagine yourself in: you're building a new blog for a client that has <em>very</em> particular visual design tastes. Every time your designer brings in a mockup, they provide detailed feedback about low-level visual design details such as fonts, whitespace, alignment, and they frequently change their mind about their choices. Your designer is patient&mdash;they don't get frustrated, but instead patiently respond to feedback with new designs&mdash;but it's pretty clear that even after you build this site, there's going to be a steady stream of visual redesign requests. That's okay: you and your designer are billing by the hour. But you need a blogging platform that's going to give you the most power to customize the visual vocabulary of the site. At the same time, the client is quite picky about formatting her posts as well. She likes to incorporate images and other media into her posts.</p>
+
+		<h2>Investigate (25 min)</h2>
+		
+		<p>Because we have limited time, you're going to focus your tradeoff analysis on <a href="https://medium.com/">Medium</a> and <a href="https://wordpress.org/">Wordpress.org</a>. Research both platforms and form an argument for why one is the better choice than the other for this particular client.</p>
+		
+		<p>Here are some strategies you may want to use:</p>
+		
+		<ul>
+			<li>Some people online may have already done the hard work of doing this analysis. Search the web for these tradeoff analyses and see if someone addresses the specific concerns relevant to this scenario. Do you trust their analysis? Is their analysis current?</p>
+			<li>Identify specific requirements from the scenario and investigate to what extent	each platform supports those requirements by both using the project and reading its extensibility and customization support.</li>
+		</ul>
+
+		<h2>Share (5 min)</h2>
+			
+		<p>Discuss your argument with your neighbor. Are you persuaded by their argument? Did you persuade them? What shifted your opinion, if anything?</p>
+		
+		<h2>Discuss (10 min)</h2>
+		
+		<p>I'll call on pairs to discuss their proposal.</p>
+
+		<h2>Further reading</h2>
+		
+		<p id="li">Paul Luo Li, Andrew J. Ko, and Jiamin Zhu. 2015. <a href="http://dl.acm.org/citation.cfm?id=2818839" target="_blank">What makes a great software engineer?</a> In Proceedings of the 37th International Conference on Software Engineering - Volume 1 (ICSE '15), Vol. 1. IEEE Press, Piscataway, NJ, USA, 700-710.</p>
+
+
+	</body>
+
+</html>
+
+
+

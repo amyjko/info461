@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="../style.css" />
+
+		<title>Verification</title>
+		
+	</head>
+	<body>
+		<p><a href="../index.html">Back to Homepage</a></p>
+
+		<!-- UPDATE -->
+		<img src="images/moth.png" class="img-responsive" />		
+		<small>Credit: public domain</small>
+		
+		<h1>Homework 6 - Verification Plans</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>The first software defect was reportedly discovered by Grace Hopper, a U.S. Navy Rural Admiral, while she was writing programs for the Harvard Mark II. She literally found a moth stuck between a relay in the machine, then taped it into the Mark II's log book with the explanation: "First actual case of bug being found." Now, long before that, there were defects in programs; defects are a part of developing software. We make mistakes, then we fix them.</p>
+		
+		<p>What we don't do is <em>ship</em> them. No one wants to use software that doesn't do what it was intended to do. That defeats the core purpose of software: it does things reliably and fast.</p> 
+		
+		<p>What we do to prevent shipping defects is <a href="../readings/verification.html">verify</a>. But we have to do this in a way that actually decreases the likelihood that our users find defects. In every case, this means making a <strong>plan</strong>.</p>
+		
+		<p>Because there are many ways to verify software, plans can vary. Some plans might be heavily focused on testing, whereas others might use formal verification. Others might just focus on shipping software and having users report failures. All of this depend what your team's tolerance for failure is.</p>
+		
+		<p>Your job in this homework is to devise such a plan. Your plan should include:</p>
+		
+		<ul>
+			<li>A list of all of the requirements that you will verify. You don't have to verify them all (nor likely can you).</li>
+			<li>For each requirement that you will verify, a verification plan:</li>
+			<ul>
+				<li>If you propose to write a tests, what <em>exact</em> tests will you conduct and what will count as each test passing? Will you write an automated test or run the test manually?</li>
+				<li>If you propose to conduct reviews or inspections, how will you analyze the code? If you write a proof, what property will you prove? If you conduct a review or inspection, what aspects of the code will you inspect to verify the requirement is met?</div>
+			</ul>
+			<li>For all of the requirements, how will your verifications be integrated into your process? Will you run automated tests after every build? Before every commit? When will you conduct inspections and who will be involved?</li>
+		</ul>
+		
+		<p>The structure of your written plan is up to you. Organize it in a way that's helpful for you executing your plan.</p>
+		
+		<h2>Grading</h2>
+		
+		<p>Submit your plan to Canvas as a URL to a GitHub page.</p>
+		
+		<p>You'll get full credit, minus any clear violations of the criteria below:</p>
+		
+		<ul>
+			<li><strong>-0.3 points</strong>. A requirement critical to the value of your software is not part of your verification plan.</li>
+			<li><strong>-0.2 points</strong>. A plan won't verify the stated requirement.</li>
+			<li><strong>-0.1 points</strong>. A plan doesn't say which requirement its verifying.</li>
+			<li><strong>-0.1 points</strong>. A plan is too ambiguous to be followed consistently each time it is followed.</li>
+		</ul>
+
+		<p>Notice that the grading scale is is pretty picky: it requires a lot of very careful, precise thought about exactly what you should verify. This is the level of precision that good verification requires.
+		
+		<p>In preparing your plan, evaluate your plan against the criteria above before submitting (verify your plan!).</p>
+
+	</body>
+
+</html>
+
+
+

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="style.css" />
+
+	<title>INFO 461 Cooperative Software Design</title>
+
+	</head>
+	<body>
+		
+		<!-- Anything with the tag QUARTERLY next to it has to be updated each quarter. -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+	
+					<img src="images/tessellation.jpg" class="img-responsive" />		
+					
+					<h1>INFO 461 Cooperative Software Design</h1>
+
+					<!-- QUARTERLY -->
+					<div class="lead">
+						Instructor: <a href="http://faculty.uw.edu/ajko" target="_blank">Andrew J. Ko, Ph.D.</a>
+						<small style="float:right"><a href="mailto:ajko@uw.edu">email Andy (Prof)</a> | <a href="mailto:bxie@uw.edu">email Benji (TA)</a> | <a href="mailto:multi_info461c_sp17@uw.edu">email class</a></small>
+						<br/>
+						TA: <a href="http://benjixie.com" target="_blank">Benji Xie</a>
+					</div>
+
+					<p>
+						<a href="#schedule">Schedule</a>
+						&bull;
+						<a href="#grading">Grading</a>
+						&bull;
+						<a href="#activities">Activities</a>
+						&bull;
+						<a href="#reading">Reading</a>
+						&bull;
+						<a href="#midterm">Midterm</a>
+						&bull;
+						<a href="#project">Project</a>
+					</p>
+					
+					<p>In this class you'll learn how to think like a software engineer. You'll learn what software engineers do and how they do it. You'll also learn about the contexts in which a software engineer sits&mdash;a team, an organization, a market, and a society&mdash;learning to understand how your low-level engineering skills impact these larger contexts. By the end of the course, you should be able to enter any organization and understand the social and technical contexts in which you are writing code. If you want to be a great software engineer, this is the course for you.</p>
+
+					<p>To learn these things, this course has three major phases:</p>
+					
+					<ul>
+						<li>Two weeks of context setting about software, software engineers, and society</li>
+						<li>Five weeks of readings and skills on grand challenges in software engineering</li>
+						<li>Four weeks of software engineering practice</li>
+					</ul>
+
+					<p>Additionally, we'll use the labs throughout the quarter to practice interpersonal skills critical to being a great software engineer.</p>								
+					<h2>Prerequisites</h2>
+					
+					<p>You should have aspirations to be a software engineer or to work closely with them. Because we'll be building for the web, you should also know:</p>
+					<ul>
+					    <li>JavaScript, HTML, and CSS</li>
+					    <li>How to build basic responsive, interactive websites</li>
+					    <li>How to use Git and GitHub</li>
+					    <li>INFO 343 or CSE 154 should be suitable preparation for the above.</li>
+					</ul>
+						
+					<!-- QUARTERLY -->
+					<h2>Office Hours</h2>
+					
+					<p>I'm available to talk about jobs, careers, graduate school, research, class, and anything else. My office hours this quarter are <b>Tuesday and Thursday 9-11 am</b>, though occasionally I need to schedule things over it. To guarantee I'll be around, write me in advance to secure a time.</p>
+					
+					<p>If you'd like to meet with the TA, email the TA to schedule a meetings.</p>
+					
+					<h2>Devices in Class</h2>
+					
+					<p>We will use smartphones and laptops throughout the quarter to facilitate activities and project work in-class. <i>However</i>, research and student feedback clearly shows that using devices on non-class related activities not only harms your own learning, but other students' learning as well. Therefore, <b>I only allow device usage during activities that require devices. At all other times, you should not be using your device.</b> I'll help you remember this by announcing when to bring devices out and when to put them away.</p>
+
+					<!-- QUARTERLY -->
+					<h2 id="teams">Teams, Repositories, and Releases</h2>
+					
+					<p>This quarter we have seven teams:</p>
+					
+					<table class="table table-striped">
+						<tr>
+							<td>Level</td>
+							<td><a target="_blank" href="https://github.com/I461-Bridge/Level">GitHub</a></td>
+							<td><a target="_blank" href="http://students.washington.edu/sneak/Level/#/">Try it</a></td>
+						</tr>
+						<tr>
+							<td>EasyPick</td>
+							<td><a target="_blank" href="https://github.com/EZPick/EasyPick">GitHub</a></td>
+							<td><a target="_blank" href="http://ezpick.herokuapp.com/">Try it</a></td>
+						</tr>
+						<tr>
+							<td>Choreless</td>
+							<td><a target="_blank" href="https://github.com/HomeDivision/Choreless">GitHub</a></td>
+							<td><a target="_blank" href="https://choreless-20110.firebaseapp.com/">Try it</a></td>
+						</tr>
+						<tr>
+							<td>HyperStroop</td>
+							<td><a target="_blank" href="https://github.com/hyperStroop/hyperStroop">GitHub</a></td>
+							<td><a target="_blank" href="http://students.washington.edu/johnyun/hyperStroop/StroopGame/index.html">Try it</a></td>
+						</tr>
+						<tr>
+							<td>sparkclips</td>
+							<td><a target="_blank" href="https://github.com/sheared-sasquatch">GitHub</a></td>
+							<td><a target="_blank" href="http://sparkclips.azurewebsites.net/">Try it</a></td>
+						</tr>
+						<tr>
+							<td>YumMe</td>
+							<td><a target="_blank" href="https://github.com/YumMe/YumMe">GitHub</a></td>
+							<td><a target="_blank" href="https://yumme.github.io/YumMe/my-app/build/#/">Try it</a></td>
+						</tr>
+						<tr>
+							<td>cue-music</td>
+							<td><a target="_blank" href="https://github.com/cue-music/cue-music">GitHub</a></td>
+							<td><a target="_blank" href="http://students.washington.edu/skwolf/cue-music">Try it</a></td>
+						</tr>
+					</table>
+					
+					<!-- QUARTERLY -->
+					<h2 id="schedule">Schedule</h2>
+	
+					<table class="table table-striped text-left">
+							
+						<tr><td colspan=3 class="text-uppercase lead">Week 1 &mdash; What is software engineering?</td></tr>
+	
+						<tr>
+							<!-- QUARTERLY -->
+							<td>3/27</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li><a href="https://docs.google.com/a/uw.edu/presentation/d/1iMX_Q-yQooYkkLZMiOn80h-8tO82TI1Z0f-VdK1DWDo/edit?usp=sharing">Welcome</a> (10 min)</li> <!-- I'm experienced -->
+									<li>Review this syllabus (20 min)</li>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/history.html">History of software engineering</a></li>
+									<li>Activity (40 min): <a href="activities/situating-software-organizations.html">Situating software organizations</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>3/29</td><td>Lab</td>
+							<td>
+								<ul>
+									<li>Activity (50 min): <a href="activities/self-regulation.html">Great engineers are self-regulating</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>3/29</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Lab discussion (5 min)</li>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/organizations.html">Software engineering organizations</a></li>
+									<li>Homework 1 (80 min): <a href="homeworks/design-your-organization.html">Design your organization</a></li>
+								</ul>
+							</td>
+						</tr>
+	
+						<tr><td colspan=3 class="text-uppercase lead">Week 2 &mdash; What do software engineers do?</td></tr>
+	
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/3</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/communication.html">Communication</a></li>
+									<li>Activity (80 min): <a href="activities/communication.html">Communication setup</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/5</td><td>Lab</td>
+							<td>
+								<ul>
+									<li>Activity (50 min): <a href="activities/open-minded.html">Great engineers are open-minded</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/5</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Homework 1 due</li>
+									<li>Lab discussion (5 min)</li>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/productivity.html">Productivity</a></li>
+									<li>Homework 2 (80 min): <a href="homeworks/design-specification.html">Design specification</a></li>
+								</ul>
+							</td>
+						</tr>
+	
+						<tr><td colspan=3 class="text-uppercase lead">Week 3 &mdash; Defining requirements</td></tr>
+	
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/10</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/quality.html">Software quality</a></li>
+									<li>Activity (80 min): <a href="activities/rank-qualities.html">Rank qualities</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/12</td><td>Lab</td>
+							<td>
+								<ul>
+									<li>Activity (50 min): <a href="activities/complexity.html">Great engineers are facile with complexity</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/12</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Homework 2 due</li>
+									<li>Lab discussion (5 min)</li>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/requirements.html">Requirements engineering</a></li>
+									<li>Homework 3 (80 min): <a href="homeworks/requirements.html">Requirements specification</a></li>
+								</ul>
+							</td>
+						</tr>
+	
+						<tr><td colspan=3 class="text-uppercase lead">Week 4 &mdash; Specifying Code</td></tr>
+	
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/17</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/architecture.html">Architecture</a></li>	
+									<li>Activity (80 min): <a href="activities/architecture.html">Architecture planning</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/19</td><td>Lab</td>
+							<td>
+								<ul>
+									<li>Activity (50 min): <a href="activities/tradeoffs.html">Great engineers are tradeoff-aware</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/19</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Homework 3 due</li>
+									<li>Lab discussion (5 min)</li>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/specifications.html">Functional Specifications</a></li>
+									<li>Homework 4 (50 min): <a href="homeworks/architecture.html">Architectural Specification</a></li>
+								</ul>
+							</td>
+						</tr>
+	
+						<tr><td colspan=3 class="text-uppercase lead">Week 5  &mdash; How software engineers should work</td></tr>
+	
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/24</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/process.html">Process</a></li>
+									<li>Activity (80 min): <a href="activities/schedule.html">Schedule</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/26</td><td>Lab</td>
+							<td>
+								<ul>
+									<li>Activity (50 min): <a href="activities/honest.html">Great engineers are honest</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>4/26</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Homework 4 due</li>
+									<li>Lab discussion (5 min)</li>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/comprehension.html">Comprehension</a></li>
+									<li>Homework 5 (50 min): <a href="homeworks/process.html">Process</a></li>
+								</ul>
+							</td>
+						</tr>
+	
+						<tr><td colspan=3 class="text-uppercase lead">Week 6 &mdash; Verifying Code</td></tr>
+	
+						<tr>
+							<!-- QUARTERLY -->
+							<td>5/1</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Reading (45 min): <a href="../books/cooperative-software-development/verification.html">Verification</a></li>
+									<li>Activity (65 min): <a href="activities/review.html">Code reviews</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>5/3</td><td>Lab</td>
+							<td>
+								<ul>
+									<li>Activity (50 min): <a href="activities/resourceful.html">Great engineers are resourceful</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>5/3</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Homework 5 due</li>
+									<li>Lab discussion (5 min)</li>
+									<li>Reading (30 min) <a href="../books/cooperative-software-development/monitoring.html">Monitoring</a></li>
+									<li>Homework 6 (80 min): <a href="homeworks/verification.html">Verification plan</a></li>
+								</ul>
+							</td>
+						</tr>
+	
+						<tr><td colspan=3 class="text-uppercase lead">Week 7 &mdash; Evolving Code <small>(Andy at <a href="https://chi2017.acm.org/">CHI 2017</a>)</small></td></tr>
+	
+						<tr>
+							<!-- QUARTERLY -->
+							<td>5/8</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/evolution.html">Evolution</a></li>
+									<li>Activity (80 min): <a href="activities/builds.html">Builds</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr class="warning">
+							<!-- QUARTERLY -->
+							<td>5/10</td><td>Lab</td>
+							<td>
+								<ul>
+									<li>Activity (50 min): <a href="activities/adaptive.html">Great engineers are adaptive</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr class="warning">
+							<!-- QUARTERLY -->
+							<td>5/10</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Homework 6 due</li>
+									<li>Lab discussion (5 min)</li>
+									<li>Reading (30 min): <a href="../books/cooperative-software-development/debugging.html">Debugging</a></li>
+									<li>Midterm (30 min)</li>
+									<li>Homework 7 (50 min): <a href="homeworks/release.html">Release</a></li>
+								</ul>
+							</td>
+						</tr>
+	
+						<!-- QUARTERLY -->
+						<tr><td colspan=3 class="text-uppercase lead">Week 8 &mdash; Sprint</td></tr>
+	
+						<tr>
+							<!-- QUARTERLY -->
+							<td>5/15</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Activity (110 min): <a href="activities/work.html">Work time</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>5/17</td><td>Lab</td>
+							<td>
+								<ul>
+									<li>Activity (50 min): <a href="activities/vulnerable.html">Great engineers are vulnerable</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>5/17</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Lab discussion (5 min)</li>
+									<li>Activity (110 min): <a href="activities/work.html">Work time</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>5/19</td><td>5 pm</td>
+							<td>
+								<ul>
+									<li>Requirements freeze</li>
+								</ul>
+							</td>
+						</tr>
+	
+						<tr><td colspan=3 class="text-uppercase lead">Week 9 &mdash; Sprint <small>(Andy at <a href="http://icse2017.gatech.edu/">ICSE 2017</a> in Buenos Aires, Argentina)</small></td></tr>
+	
+						<tr class="warning">
+							<!-- QUARTERLY -->
+							<td>5/22</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Activity (110 min): <a href="activities/work.html">Work time</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr class="warning">
+							<!-- QUARTERLY -->
+							<td>5/24</td><td>Lab</td>
+							<td>
+								<ul>
+									<li>Activity (50 min): <a href="activities/persistent.html">Great engineers are persistent</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr class="warning">
+							<!-- QUARTERLY -->
+							<td>5/24</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>Lab discussion (5 min)</li>
+									<li>Activity (110 min): <a href="activities/work.html">Work time</a></li>
+								</ul>
+							</td>
+						</tr>
+	
+						<tr><td colspan=3 class="text-uppercase lead">Week 10 &mdash; Sprint</td></tr>
+						
+						<tr class="danger">
+							<!-- QUARTERLY -->
+							<td>5/29</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li>NO CLASS Memorial Day</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>5/31</td><td>Lab</td>
+							<td>
+								<ul>
+									<!--<li>Activity (50 min): <a href="activities/vigilant.html">Great engineers are vigilant</a>--></li>
+									<li>Test-a-thon</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>5/31</td><td>Lecture</td>
+							<td>
+								<ul>
+									<li><a href="http://icse2017.gatech.edu/">ICSE 2017</a> trip report</li>
+									<li>Activity (110 min): <a href="activities/work.html">Work time</a></li>
+								</ul>
+							</td>
+						</tr>
+	
+						<tr><td colspan=3 class="text-uppercase lead">Finals week</td></tr>
+	
+						<tr>
+							<!-- QUARTERLY -->
+							<td>6/4, 5 pm</td>
+							<td></td>
+							<td>
+								<ul>
+									<li><a href="homeworks/release.html">Homework 7</a> due: release (Sunday)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<!-- QUARTERLY -->
+							<td>6/5, 5 pm</td>
+							<td></td>
+							<td>
+								<ul>
+									<li><a href="homeworks/evaluate.html">Homework 8</a> due: evaluate</li>
+								</ul>
+							</td>
+						</tr>							
+						<tr>
+							<!-- QUARTERLY -->
+							<td>6/7, 5 pm</td><td></td><td>
+								<ul>
+									<li><a href="homeworks/patch.html">Homework 9</a> due: patch</li>
+								</ul>
+							</td>
+						</tr>							
+						<tr>
+							<!-- QUARTERLY -->
+							<td>6/8, 5 pm</td><td></td><td>
+								<ul>
+									<li><a href="homeworks/reflect.html">Homework 10</a> due: reflect</li>
+								</ul>
+							</td>
+						</tr>							
+	
+					</table>
+	
+					<h2 id="grading">Grading</h2>
+	
+					<p>There are <b>100 points</b> you can earn in this class:
+					
+					<ul>
+						<li><a href="#activities">Activities</a> (20 points, 1 point each). Show up and engage to get credit.</li>
+						<li><a href="#reading">Reading</a> (28 points, 2 points each). Prove you read and understood the reading.</li>
+						<li><a href="#midterm">Midterm</a> (12 points). Prove you know and can do everything in the first seven weeks of the class.</li>
+						<li><a href="#project">Project</a> (40 points, <i>team score</i>). Reach several software engineering project milestones.</li>
+					</ul>
+										
+					<p>After rounding your points to the nearest even number, I'll map your 100 points to a 4.0 scale using the table below.</p>
+					
+					<table class="table table-striped">
+						<tr>
+							<td>&ge; 97 &rarr; 4.0</td>
+							<td>92 &rarr; 3.5</td>
+							<td>87 &rarr; 3.0</td>
+							<td>82 &rarr; 2.5</td>
+							<td>77 &rarr; 2.0</td>
+							<td>72 &rarr; 1.5</td>
+							<td>67 &rarr; 0.9</td>
+	
+						</tr>
+						<tr>
+							<td>96 &rarr; 3.9</td>
+							<td>91 &rarr; 3.4</td>
+							<td>86 &rarr; 2.9</td>
+							<td>81 &rarr; 2.4</td>
+							<td>76 &rarr; 1.9</td>
+							<td>71 &rarr; 1.4</td>
+							<td>66 &rarr; 0.8</td>
+	
+						</tr>
+						<tr>
+							<td>95 &rarr; 3.8</td>
+							<td>90 &rarr; 3.3</td>
+							<td>85 &rarr; 2.8</td>
+							<td>80 &rarr; 2.3</td>
+							<td>75 &rarr; 1.8</td>
+							<td>70 &rarr; 1.2</td>
+							<td>65 &rarr; 0.7</td>
+						</tr>
+						<tr>
+							<td>94 &rarr; 3.7</td>
+							<td>89 &rarr; 3.2</td>
+							<td>84 &rarr; 2.7</td>
+							<td>79 &rarr; 2.2</td>
+							<td>74 &rarr; 1.7</td>
+							<td>69 &rarr; 1.1</td>
+							<td>&le; 64 &rarr; 0.0</td>
+						</tr>
+						<tr>
+							<td>93 &rarr; 3.6</td>
+							<td>88 &rarr; 3.1</td>
+							<td>83 &rarr; 2.6</td>
+							<td>78 &rarr; 2.1</td>
+							<td>73 &rarr; 1.6</td>
+							<td>68 &rarr; 1.0</td>
+						</tr>
+					</table>					
+		
+					<div class="alert alert-danger">Late work receives no credit unless you can provide a note from a health care professional documenting the reason for your absence. However, you can miss up to 3 activities without penalty and without documentation. This should be enough to allow for sickness, unavoidable travel, or other personal matters. If you miss a reading quiz due to sickness, you can make up the quiz credit by sending a critique of the reading to me within a week of the due date that reports at least three improvements to the content, including high level issues such as topics that should be discussed or points you think are wrong, to low level issues including spelling, grammar, or clarity.</div>
+
+					<h2 id="activities">Activities</h2>
+					
+					<p>Each day in class we'll practice some skill. You'll get <a href="#grading">1 point</a> if you engage in and complete the activity. How to get credit for the activity will depend on the activity; sometimes being present will be enough, sometimes being to class on time will be enough, and sometimes you'll have to turn something in.</p>
+					
+					<h2 id="reading">Reading</h2>
+					
+					<p>Readings are due at the beginning of each lecture (twice a week). Each time, you'll need to come prepared to discuss two things: 1) the chapter I wrote and 2) a reading or podcast you've selected from the chapter's list of further readings.</p>
+
+					<p>The day that each reading is due, we'll do the following:</p>
+					
+					<ul>
+						<li>Share what you're confused about.</li>
+						<li>I clarify confusions.</li>
+						<li>I give you some questions to answer individually about the assigned chapter you read.</li>
+						<li>You turn in your answer.</li>
+						<li>You discuss your answers with your neighbor.</li>
+						<li>We discuss the correct answers as a class.</li>
+					</ul>
+					
+					<p>Your answer is correct, you'll receive <a href="#grading">1 point</a>. I will give partial credit for partially correct answers, at my discretion.</p>
+
+					<h3 id="reading-selected">Selected Reading</h3>
+					<p>Your selected reading assignment is <i>your</i> choice. Before class, read <b>one</b> of the articles linked in the reading. You'll see links to most readings in the chapter; they're in the ACM Digital Library, which UW gives you free access to while on campus. To gain access off campus, you'll need to use the <a href="http://www.lib.washington.edu/help/connect/tools">UW Libraries proxy</a>.</p>					
+					
+					<p>For your additional 1 point of reading credit, submit to Canvas a summary of no more than 500 words that:</p>
+					
+					<ul>
+						<li><em>Summarizes the point of the article.</em> The summary should demonstrate that you have read the paper (and not just the abstract).</li>
+						<ul>
+							<li>-0.5 pts if summary missing</li>
+							<li>-0.25 pts if summary is not thorough enough</li>
+						</ul>
+						<li><em>Describes the thing you found most interesting about the article and explains why it is interesting.</em> Connect the reading to your experiences, other parts of this course, your project, your interests, etc.</li>
+						<ul>
+							<li>-0.5 pts if no mention of what is interesting</li>
+							<li>-0.25 pts if no connections from reading are drawn</li>
+						</ul>
+						<li><em>Includes a citation to what you read.</em></li>
+						<ul>
+							<li>-0.25 pts if citation missing</li>
+						</ul>
+					</ul>
+
+					<p>When reading the article, here are a few points to remember:</p>
+					
+					<ul>
+						<li>You don't need to read every word to understand the discovery in the paper.</li>
+						<li>Not all research papers are well written; expect some to be more accessible than others.</li>
+						<li>Read not only for the discovery of the paper, but the basis on which that discovery was made. Do you believe it's result?</li>
+					</ul>
+					
+					<p>In class, after we discuss the assigned reading, we will:</p>
+					
+					<ul>
+						<li>Break into groups of four</li>
+						<li>Discuss your selected readings as a group, identifying one insight from the readings that connect with the topic of the day to share with the class</li>
+						<li>Elect someone to share the insights with the class.</li>
+						<li>We'll hear from 3-4 groups about their most interesting insight.</li>
+					</ul>
+
+					<p>If you <em>really</em> don't want to read one of the readings I've selected, you're welcome to write me with a different recommendation. The reading you choose can be academic, or it can be an extensive blog post, video, or podcast that concerns the topic for the day.</p>
+
+					<h2 id="midterm">Midterm</h2>
+					
+					<p>The midterm will test your knowledge of the reading from the first seven weeks of class. Why include a midterm? It'll incentivize you to read more closely and retain what you read better. It'll also help me differentiate who really knows the material and who doesn't, assigning grades that best reflect your knowledge. It will cover every topic in the assigned readings and every skill practiced in class.<p>
+
+					<p>The midterm will consist entirely of true/false questions. (Fun!) Your final points will be <code>12 x fraction_correct</code>. Also note that any questions that more than 60% of students in the class get wrong will be excluded from the final score as they were likely confusing or concerned material that I poorly taught.</p>
+	
+					<h2 id="project">Project</h2>
+					
+					<p>The project is split across ten homework assignments, each worth a different amount:</p>
+					
+					<ol>
+						<li><a href="homeworks/design-your-organization.html">Design your organization</a> (4 points)</li>
+						<li><a href="homeworks/design-specification.html">Design</a> (4 points)</li>
+						<li><a href="homeworks/requirements.html">Requirements</a> (4 points)</li>
+						<li><a href="homeworks/architecture.html">Specifications</a> (4 points)</li>
+						<li><a href="homeworks/process.html">Process</a> (4 points)</li>
+						<li><a href="homeworks/verification.html">Verification plan</a> (4 points)</li>
+						<li><a href="homeworks/release.html">Release</a> (10 points)</li>
+						<li><a href="homeworks/evaluate.html">Evaluate</a> (2 points)</li>
+						<li><a href="homeworks/patch.html">Patch</a> (2 points)</li>
+						<li><a href="homeworks/reflect.html">Reflect</a> (2 points)</li>
+					</ol>
+					
+					<p>The goal of the project is for your to practice <em>planning and executing</em> a software engineering project, so you can experience the nuances of setting up process, constraints, and plans in relation to an organization. Note, however, that because the timeline for the project is so short, it <em>won't</em> give you a deep, longitudinal experience with software engineering, nor will it give you practice with massive complexity or scale. I believe these are experiences best left to practice in industry, as they're <em>very</em> difficult to replicate in the artificial setting of school.</p>
+					
+					<p>Note that in the final three weeks of the course, we'll use class time primarily for team meeting time. The TA and I will be available as free consultants, helping you debug, do research on libraries, and offer advice on implementation. You are not required to come to class those days, but I highly recommend using the time for team coordination and help.</p>
+					
+				</div>
+			</div>		
+		</div>
+	</body>
+</html>

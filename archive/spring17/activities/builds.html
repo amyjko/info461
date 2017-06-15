@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="../style.css" />
+
+		<title>Builds</title>
+		
+	</head>
+	<body>
+		<p><a href="../index.html">Back to Homepage</a></p>
+
+		<img src="images/build.jpg" class="img-responsive" />		
+
+		<small>Credit: public domain</small>
+		
+		<h1>Builds</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>If you're building anything more than just a static web page, build automation can be key to accelerating the development cycle of edit, run, debug. In today's activity, determine the following:</p>
+		
+		<ul>
+			<li>Do you need to build?</li>
+			<li>If so, what do you need to build?</li>
+			<li>Will a simple <code>npm</code> build script work or do you need something more sophisticated?</li>
+			<li>Will you adopt a continuous integration tool like <a href="codeship.com">CodeShip</a> to streamline testing and releases?</li>
+			<li>How will you integrate tests into your builds?</li>
+		</ul>
+		
+		<p>The simplest of build scripts can still have a lot of complexity. For example, here's an <code>npm</code> <code>package.json</code> file that I've been using to build my <a href="http://faculty.uw.edu/ajko">faculty web site</a>, which uses React and a variety of other dependencies:</p>
+		
+<pre>
+{
+	"name": "UWFacultyPage",
+	"version": "1.0.0",
+	"scripts": {
+	    "build": "browserify -t [ babelify --presets [ react ] ] src/app.js | uglifyjs > build/app.js",
+	    "watch": "watch 'npm run build' src"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.0.0",
+		"babel-preset-es2015": "^6.3.13",
+		"browserify": "latest",
+		"watch": "latest"
+	},
+	"dependencies": {
+		"babel-preset-react": "^6.5.0",
+		"babelify": "^7.2.0",
+		"react": "^0.14.0",
+		"react-dom": "^0.14.0",
+		"react-router": "^2.0.0",
+		"history": "latest",
+		"jquery": "^1.12.0",
+		"bootstrap": "^3.3.6",
+		"lodash": "latest",
+		"uglify-js": "latest"
+	}
+}
+</pre>
+
+	<p>When I execute <code>npm run build</code>, <code>npm</code> executes the command that I've named "build" above, which runs <code>browserify</code>. This is an <code>npm</code> package that first converts all of the JSX files in my source directly into JavaScript, then compiles all of the JavaScript files in all of those big source files into a single monolithic JavaScript source file, and then pipes that big file into <code>uglifyjs</code>, which minifies the big monolithic JavaScript file, shrinking variable names and removing unnecessary whitespace. All of this means that I only have to have a single JavaScript import in my main HTML file and that it's small, accelerating page load.</p>
+	
+	<p>Also note the <code>watch</code> command. It uses a command line utility called <code>watch</code> to run a build every time I edit a file in my <code>src</code> folder, so I always have a fresh build for manual testing.</p>
+	
+	<p>You might not want or need all of the things above. You might also want more. What you do depends on the plans you've devised for coordination and testing.</p>
+	
+	<h2>For credit</h2>
+	
+	<p>Explain your build process to me or the TA for credit.</p>
+		
+	</body>
+
+</html>
+
+
+

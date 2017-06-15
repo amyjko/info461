@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="../style.css" />
+
+		<title>Architecting</title>
+		
+	</head>
+	<body>
+		<p><a href="../index.html">Back to Homepage</a></p>
+
+		<!-- UPDATE -->
+		<img src="images/puzzle2.jpg" class="img-responsive" />		
+		<small>Credit: public domain</small>
+		
+		<h1>Architecting</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>You're the in middle of writing requirements now, but in the <a href="../homework/specifications.html">next homework</a>, your job will be to carefully delineate an architecture of your implementation that will satisfy these requirements. In this activity, I want you to brainstorm the <b>components</b> involved in your implementation and how they will interact to satisfy your requirements. Like the puzzle above, a good architecture interlocks seamlessly and coherently, achieving both functionality, but also comprehensibility.</p>
+		
+		<p>How should you go about doing this? Do what the experts do: whiteboard (<a href="#mangano">Mangano et al. 2015</a>). Software architectures draw components, use arrows to capture connections and relationships between components. They give names to data structures and try to diagram how those data structures will move through an architecture. They mentally simulate full traces of user interfaces to verify that architectural ideas will work. They draw alternatives and debate their tradeoffs. Use paper, a whiteboard, or a chalkboard to do these same things and converge toward a set of abstractions that will be the basis for your specification.</p>
+		
+		<p>Because we're using the web in this class, your some of your architectural questions are already answered. You'll have clients and a server. There will be requests and responses. You'll likely use a model-view-controller architecture to separate data, views, and changes to data through views. But there are a number of other questions for you to answer:</p>
+		
+		<ul>
+			<li>What is your data exactly?</li>
+			<li>Where will your data be stored?</li>
+			<li>What will retrieve data?</li>
+			<li>What will be responsible for presenting data?</li>
+			
+		</ul>
+		
+		<p>Try to answer all of these questions, giving names to each of the different components in your implementation that will be be responsible for the above activities. Part of answering the above is researching APIs, libraries, and frameworks that provide you answers to the questions above. In other cases (particularly with data), these are choices your team will need to make.</p>
+		
+		<h2>Credit</h2>
+		
+		<p>Before the end of class, show your proposed list of components to your instructor or TA and get feedback.</p>
+		
+		<h2>Further reading</h2>
+		
+		<p id="mangano">Mangano, N., LaToza, T. D., Petre, M., & Van der Hoek, A. (2015). <a href="http://ieeexplore.ieee.org/document/6922572/?arnumber=6922572">How software designers interact with sketches at the whiteboard</a>. IEEE Transactions on Software Engineering, 41(2), 135-156.</p>
+		
+	</body>
+
+</html>
+
+
+

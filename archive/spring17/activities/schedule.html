@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="../style.css" />
+
+		<title>Schedule</title>
+		
+	</head>
+	<body>
+		<p><a href="../index.html">Back to Homepage</a></p>
+
+		<img src="images/calendar.jpg" class="img-responsive" />		
+		<small>Credit: public domain</small>
+		
+		<h1>Schedule</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>As we discussed in the reading, the socio-technical theory of coordination suggests that the best process is the one that designs your communication and coordination around the <em>technical dependencies</em> in your architecture. Now that you're close to having your architectural specification done, try to determine which <em>components</em> depend on each other to decide:</p>
+		
+		<ul>
+			<li>Who will <b>own</b> each component</li>
+			<li>When they will be done building it</li>
+			<li>Who will have to remain aware of progress on that component in order to build <em>their</em> components.</li>
+		</ul>
+		
+		<p>To represent your decision, make a table with all of your components in the rows and columns. Which components depend on each other? Read the row first, then the column, as in "Component 1 depends on Component 2"</p>
+		
+		<table class="table table-striped">
+			<tr>
+				<th></th>
+				<th>Component 1<br><small>Joe</small></th>
+				<th>Component 2<br><small>Jane</small></th>
+				<th>Component 3<br><small>Jack</small></th>
+				<th>&hellip;</th>
+			</tr>
+			<tr>
+				<th>Component 1<br><small>Joe</small></th>
+				<td>&ndash;</td>
+				<td>&check;</td>
+				<td>&check;</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Component 2<br><small>Jane</small></th>
+				<td></td>
+				<td>&ndash;</td>
+				<td>&check;</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Component 3<br><small>Jack</small></th>
+				<td></td>
+				<td></td>
+				<td>&ndash;</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>&hellip;</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		
+		<p>This should tell you who has to coordinate with who. Now, estimate how long it's going to take to build each of those components. What do these estimates mean for the order you should build your components in? Generate a schedule for when you're going to build each component by, like this:</p>
+		
+		<ul>
+			<li>Component 2 (Jane, 4/4)</li>
+			<li>Component 3 (Jane, 4/4)</li>
+			<li>Component 1 (Joe, 4/11)</li>
+		</ul>
+		
+		<p>To relax these constraints, you can always "stub" functionality (e.g., write a function with a hard coded return value so you can call it, but implement the function later).</p>
+		
+		<p>This work will be just part of your next homework assignment.</p>
+		
+	</body>
+
+</html>
+
+
+

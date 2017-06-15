@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="../style.css" />
+
+		<title>Homework 4: Architecture Specifications</title>
+		
+	</head>
+	<body>
+		<p><a href="../index.html">Back to Homepage</a></p>
+
+		<!-- UPDATE -->
+		<img src="images/blueprint.jpg" class="img-responsive" />		
+		<small>Credit: public domain</small>
+		
+		<h1>Homework 4: Architecture Specifications</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>In <a href="requirements.html">Homework 3</a>, you detailed <em>what</em> your software is going to do from a design perspective. All of those choices you made are about the problem you're solving with the software; those details concern the world. In this homework, you're going to specify <em>how</em> you're going to achieve those requirements, defining your software's architecture.</p>
+		
+		<p>Unlike in building architecture, where there are standards for blueprints, there is no agreed upon way to specify architectures. There are highly formal tools, which precisely detail the components and connectors of a system so that code can even be automatically generated from these architectural specifications (<a href="#shaw">Shaw et al. 1995</a>). Some architectural specifications are just vague sketched diagrams on a whiteboard (<a href="#cherubini">Cherubini et al. 2007</a>).</p>
+		
+		<p>I want you to aim for the middle, writing a Markdown file in your GitHub repository that specifies all of the <b>components</b> in your system. For each component:</p>
+		
+		<ul>
+			<li>Include a name</li>
+			<li>Give a natural language descriptions of the components responsibilities.</li>
+			<li>Enumerate the data and functionality it will encapsulate.</li>
+			<li>For each kind of data, specify in natural language the exact data type</li>
+			<li>For each kind of functionality, specify in natural language the inputs and outputs and their exact data types and the properties of the intended output</li>
+		</ul>
+		
+		<p>In addition to details about individual components, write a natural language description of how the components interact, describing their connectors. (Are they communicating with events, function calls, timers, or other kinds of mechanisms?). If it helps clarity, create diagrams to specify these interactions.</p>
+		
+		<p>While I'm using the word "component" above, it is reasonable to think of components as "classes", if you want to use an object-oriented paradigm to organize your architecture. Within this paradigm, all of the details above would essentially constitute API documentation for all of the classes in your implementation. For example, consider <a href="https://developers.google.com/maps/documentation/javascript/3.exp/reference">Google Map's JavaScript API documentation</a>. It cleanly enumerates a set of classes and objects, the data and functions that each encapsulates, events that can occur that these components react to, along with all of the details about data type and behavior I've required above. (While it's one of the better examples of documentation on the web, it's still not great: it's clearly designed for people who are referencing the architectural details and not trying to learn them.).</p>
+		
+		<p>While doing this, remember that the document you're writing is not intended to satisfy me. It's intended to help you organize, plan, and streamline your implementation efforts this quarter. Therefore, focus on writing a document that's useful to you. Think of the document like a big to do list for all of the code you have to write.</p>
+		
+		<p>Lastly, consider your process for writing your architectural specification. I recommend the following:</p>
+		
+		<ol>
+			<li>Address the feedback you received on your requirements, resolving any issues your classmates identified (1 hour).</li>
+			<li>Once you're happy with your requirements, meet as a group and begin generating ideas for components that can satisfy all of your requirements (1 hour).</li>
+			<li>Sketch your ideas on a whiteboard and refine them as you identify open questions about their responsibilities and how components will communicate (1 hour).</li>
+			<li>Once you converge toward a set of components you think you think can meet your requirements, begin outlining your document (1 hour).</li>
+			<li>To identify gaps in your architecture, implement a simple prototype of your application that includes all of the structure of the components but none of the functionality. You may also want to do a feasibility assessment of key functionality (testing APIs you might use, etc.), to verify that the architecture you'll planning will actually work. Refine your architecture accordingly (2 hours).</li>
+			<li>As you write your document and prototype your architecture, other questions will arise. Schedule time with your team to resolve these questions (2 hours).</li>
+			<li>Edit your document for consistency and clarity (1 hour)</li>
+		</ol>
+
+		<p>A lot of the work above can be delegated to individual teammates. Use your management structure to assign responsibilities to ensure the work gts done on time.</p>
+			
+		<h2>Grading Criteria</h2>
+		
+		<p>Submit a GitHub URL to your architecture document in Canvas.</p>
+		
+		<p>The most important qualities of an architectural specification are <b>clarity</b> and <b>consistency</b>. If something is ambiguous or inconsistent, your collaboration will be constantly interrupted by the need to clarify and you'll likely write code that you have to discard or change because of your misinterpretations. To incentivize you writing a clear, consistent document, for every <em>unclear</em> or <em>inconsistent</em> detail include, your team will lose <b>0.1 points</b>. I'll give you three free ambiguities before I start deducting points (all documents have <em>some</em> ambiguities).</p>
+
+		<h2>Further Reading</h2>
+		
+		<p id="shaw">Shaw, M., DeLine, R., Klein, D. V., Ross, T. L., Young, D. M., & Zelesnik, G. (1995). <a href="https://doi.org/10.1109/32.385970">Abstractions for software architecture and tools to support them</a>. IEEE Transactions on Software Engineering, 21(4), 314-335.</p>
+		
+		<p id="cherubini">Cherubini, M., Venolia, G., DeLine, R., & Ko, A. J. (2007, April). <a href="https://doi.org/10.1145/1240624.1240714">Let's go to the whiteboard: how and why software developers use drawings</a>. In Proceedings of the SIGCHI conference on Human factors in computing systems (pp. 557-566).</p>
+
+	</body>
+
+</html>
+
+
+
