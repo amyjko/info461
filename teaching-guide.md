@@ -6,6 +6,7 @@
 * Update the Canvas due dates
 * Update the syllabus link on the Canvas web page
 * Update the schedule on the course website
+* Update all HTML tagged with the word "QUARTERLY"
 * Create a Slack team for the class
 * Create a #questions channel for questions
 * Invite all students to the Slack team
