@@ -1,5 +1,15 @@
 # INFO 461 Teaching Guide
 
+## Pre-quarter action items
+
+* Copy the previous year's Canvas
+* Update the Canvas due dates
+* Update the syllabus link on the Canvas web page
+* Update the schedule on the course website
+* Create a Slack team for the class
+* Create a #questions channel for questions
+* Invite all students to the Slack team
+
 ## Student context to be aware of
 
 * Many students will be doing capstone projects that also involve software engineering teamwork. They will be struggling to balance their efforts in both projects.
