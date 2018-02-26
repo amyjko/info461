@@ -1,0 +1,3 @@
+[submodule "readings"]
+	path = readings
+	url = https://github.com/andyjko/cooperative-software-development
