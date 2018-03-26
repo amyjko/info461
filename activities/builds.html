@@ -12,7 +12,9 @@
 		
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		
+
+                <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
 		<link rel="stylesheet" href="../style.css" />
 
 		<title>Builds</title>
@@ -38,9 +40,10 @@
 			<li>How will you integrate tests into your builds?</li>
 		</ul>
 		
-		<p>The simplest of build scripts can still have a lot of complexity. For example, here's an <code>npm</code> <code>package.json</code> file that I've been using to build my <a href="http://faculty.uw.edu/ajko">faculty web site</a>, which uses React and a variety of other dependencies:</p>
+		<p>The simplest of build scripts can still have a lot of complexity. For example, here's an <code>npm</code>
+		<code>package.json</code> file that Andy Ko uses to build his <a href="http://faculty.uw.edu/ajko">faculty web site</a> which uses React and a variety of other dependencies:</p>
 		
-<pre>
+<pre class="prettyprint">
 {
 	"name": "UWFacultyPage",
 	"version": "1.0.0",
@@ -69,9 +72,15 @@
 }
 </pre>
 
-	<p>When I execute <code>npm run build</code>, <code>npm</code> executes the command that I've named "build" above, which runs <code>browserify</code>. This is an <code>npm</code> package that first converts all of the JSX files in my source directly into JavaScript, then compiles all of the JavaScript files in all of those big source files into a single monolithic JavaScript source file, and then pipes that big file into <code>uglifyjs</code>, which minifies the big monolithic JavaScript file, shrinking variable names and removing unnecessary whitespace. All of this means that I only have to have a single JavaScript import in my main HTML file and that it's small, accelerating page load.</p>
+	<p>When we execute <code>npm run build</code>, <code>npm</code> executes the command that we've named "build" above, which runs
+	<code>browserify</code>. This is an <code>npm</code> package that first converts all of the JSX files in my source directly into
+	JavaScript, then compiles all of the JavaScript files in all of those big source files into a single monolithic JavaScript source
+	file, and then pipes that big file into <code>uglifyjs</code>, which minifies the big monolithic JavaScript file, shrinking variable
+	names and removing unnecessary whitespace. All of this means that we only have to have a single JavaScript import in the main HTML
+	file, and it's small, which accelerates page load.</p>
 	
-	<p>Also note the <code>watch</code> command. It uses a command line utility called <code>watch</code> to run a build every time I edit a file in my <code>src</code> folder, so I always have a fresh build for manual testing.</p>
+	<p>Also note the <code>watch</code> command. It uses a command line utility called <code>watch</code> to run a build every time we
+	edit a file in the <code>src</code> folder, so we always have a fresh build for manual testing.</p>
 	
 	<p>You might not want or need all of the things above. You might also want more. What you do depends on the plans you've devised for coordination and testing.</p>
 	
