@@ -30,11 +30,11 @@
 
 		<p>In <a href="requirements.html">Homework 3</a>, you detailed <em>what</em> your software is going to do from a design perspective. All of those choices you made are about the problem you're solving with the software; those details concern the world. In this homework, you're going to specify <em>how</em> you're going to achieve those requirements, defining your software's architecture.</p>
 		
-		<p>Unlike in building architecture, where there are standards for blueprints, there is no agreed upon way to specify architectures. There are highly formal tools, which precisely detail the components and connectors of a system so that code can even be automatically generated from these architectural specifications (<a href="#shaw">Shaw et al. 1995</a>). Some architectural specifications are just vague sketched diagrams on a whiteboard (<a href="#cherubini">Cherubini et al. 2007</a>).</p>
+		<p>Unlike in building architecture, where there are standards for blueprints, there is no agreed upon way to specify architectures. There are highly formal tools which precisely detail the components and connectors of a system so that code can even be automatically generated from these architectural specifications (<a href="#shaw">Shaw et al. 1995</a>). Some architectural specifications are just vague sketched diagrams on a whiteboard (<a href="#cherubini">Cherubini et al. 2007</a>).</p>
 		
 		<p>One key idea in designing architecture is to imagine you're inventing new "species" of creatures. Unlike living species, however, which are concerned with survival, your components are entities that have responsibilities for storing data and accomplishing computation of some kind. Inventing new species is a creative activity; you want to think about what they will and won't do, give them names, and tell stories about how they interact with each other, exchanging data.</p>
 		
-		<p>To capture your architecture, write a Markdown file in your GitHub repository that specifies all of the <b>components</b> in your system. For each component:</p>
+		<p>To capture your architecture, write a Markdown file in your GitHub repository that specifies all the <b>components</b> in your system. For each component:</p>
 		
 		<ul>
 			<li>Include a name</li>
@@ -46,9 +46,18 @@
 		
 		<p>In addition to details about individual components, write a natural language description of how the components interact, describing their connectors. (Are they communicating with events, function calls, timers, or other kinds of mechanisms?). If it helps clarity, create diagrams to specify these interactions.</p>
 		
-		<p>While I'm using the word "component" above, it is reasonable to think of components as "classes", if you want to use an object-oriented paradigm to organize your architecture. Within this paradigm, all of the details above would essentially constitute API documentation for all of the classes in your implementation. For example, consider <a href="https://developers.google.com/maps/documentation/javascript/3.exp/reference">Google Map's JavaScript API documentation</a>. It cleanly enumerates a set of classes and objects, the data and functions that each encapsulates, events that can occur that these components react to, along with all of the details about data type and behavior I've required above. (While it's one of the better examples of documentation on the web, it's still not great: it's clearly designed for people who are referencing the architectural details and not trying to learn them.).</p>
+		<p>While I'm using the word &ldquo;component&rdquo; above, it is reasonable to think of components as &ldquo;classes,&rdquo;
+		if you want to use an object-oriented paradigm to organize your architecture. Within this paradigm, all of the details above
+		would practically constitute API documentation for all of the classes in your implementation. For example, consider <a
+		href="https://developers.google.com/maps/documentation/javascript/3.exp/reference">Google Map's JavaScript API
+		documentation</a>. It cleanly enumerates a set of classes and objects, the data and functions that each encapsulates, events
+		that can occur that these components react to, along with all of the details about data type and behavior we've required
+		above. (While it's one of the better examples of documentation on the web, it's still not great: it's clearly designed for
+		people who are referencing the architectural details and not trying to learn them.).</p>
 		
-		<p>While doing this, remember that the document you're writing is not intended to satisfy me. It's intended to help you organize, plan, and streamline your implementation efforts this quarter. Therefore, focus on writing a document that's useful to you. Think of the document like a big to do list for all of the code you have to write.</p>
+		<p>While doing this, remember that the document you're writing is not intended to satisfy us. It's intended to help you
+		organize, plan, and streamline your implementation efforts this quarter. Therefore, focus on writing a document that's
+		useful to you. Think of the document like a big to-do list for all of the code you have to write.</p>
 		
 		<p>Lastly, consider your process for writing your architectural specification. I recommend the following:</p>
 		
@@ -64,11 +73,14 @@
 
 		<p>A lot of the work above can be delegated to individual teammates. Use your management structure to assign responsibilities to ensure the work gets done on time.</p>
 		
-		<p>While you're producing a document, the real goal of architecture is to make sure everyone on your team has a consistent, detailed understanding of the architecture. If they don't, you'll end up with a ball of mud. To test this, quiz each other on the architecture you have planned: can each of you explain it in detail? If not, keep explaining it to each other until you have the same understanding in your heads and in your document.</p>
+		<p>While you're producing a document, the real goal of architecture is to make sure everyone on your team has a consistent,
+		detailed understanding of the architecture. If they don't, you'll end up with a ball of mud. To test this, quiz each other
+		on the architecture you have planned: can each of you explain it in detail? If not, keep explaining it to each other until
+		you have the same understanding in your heads and in your document.</p>
 
 		<h2>Example</h2>
 		
-		<p>Here is <a href="architecture-example.pdf" target="_blank">one example of a solid architecture description</a> from a team in a previous year. It provided a detailed enumeration of components, clear explanations of functionality and data, and clearly explained interactions between components. The document could have been even clearer by using diagrams to show interactions between components, and by providing more detail about the mechanisms that components would use to interact, but it's a good start.</p>
+		<p>Here is <a href="architecture-example.pdf" target="_blank">one example of a solid architecture description</a> from a team in a previous year. It provided a detailed enumeration of components, clear explanations of functionality and data, and clearly-explained interactions between components. The document could have been even clearer by using diagrams to show interactions between components, and by providing more detail about the mechanisms that components would use to interact, but it's a good start.</p>
 
 		<h2>Grading Criteria</h2>
 		
@@ -78,9 +90,9 @@
 
 		<h2>Further Reading</h2>
 		
-		<p id="shaw">Shaw, M., DeLine, R., Klein, D. V., Ross, T. L., Young, D. M., & Zelesnik, G. (1995). <a href="https://doi.org/10.1109/32.385970">Abstractions for software architecture and tools to support them</a>. IEEE Transactions on Software Engineering, 21(4), 314-335.</p>
+		<p id="shaw">Shaw, M., DeLine, R., Klein, D. V., Ross, T. L., Young, D. M., &amp; Zelesnik, G. (1995). <a href="https://doi.org/10.1109/32.385970">Abstractions for software architecture and tools to support them</a>. IEEE Transactions on Software Engineering, 21(4), 314-335.</p>
 		
-		<p id="cherubini">Cherubini, M., Venolia, G., DeLine, R., & Ko, A. J. (2007, April). <a href="https://doi.org/10.1145/1240624.1240714">Let's go to the whiteboard: how and why software developers use drawings</a>. In Proceedings of the SIGCHI conference on Human factors in computing systems (pp. 557-566).</p>
+		<p id="cherubini">Cherubini, M., Venolia, G., DeLine, R., &amp; Ko, A. J. (2007, April). <a href="https://doi.org/10.1145/1240624.1240714">Let's go to the whiteboard: how and why software developers use drawings</a>. In Proceedings of the SIGCHI conference on Human factors in computing systems (pp. 557-566).</p>
 
 	</body>
 
